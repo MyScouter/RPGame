@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86b0901e452584b68875c439a5fe8461, type: 3}
-  m_Name: Helmet of Fire
+  m_Name: Helmet of Protection
   m_EditorClassIdentifier: 
-  name: new item
-  icon: {fileID: 0}
+  name: Helmet of Protection
+  icon: {fileID: 21300000, guid: 3e41718a374634b08b2077257bb8679f, type: 3}
   isDefaultItem: 0
+  equipmentSlot: 0
+  armorModifier: 3
+  damageModifier: 0
