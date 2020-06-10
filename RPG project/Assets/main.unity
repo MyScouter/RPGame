@@ -2740,7 +2740,7 @@ GameObject:
   - component: {fileID: 575938601}
   m_Layer: 0
   m_Name: Strong Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3807,7 +3807,7 @@ GameObject:
   - component: {fileID: 727677349}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
