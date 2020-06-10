@@ -8,6 +8,7 @@ public class EquipmentManager : MonoBehaviour
 
     public static EquipmentManager instance;
 
+
     private void Awake()
     {
         instance = this;
@@ -18,6 +19,8 @@ public class EquipmentManager : MonoBehaviour
     Equipment[] currentEquipment;
     SkinnedMeshRenderer[] currentMeshes;
     public SkinnedMeshRenderer targetMesh;
+    public Transform shield;
+    public Transform sword;
     public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
     public OnEquipmentChanged onEquipmentChanged;
     Inventory inventory;
@@ -47,12 +50,23 @@ public class EquipmentManager : MonoBehaviour
         currentEquipment[slotIndex] = newItem;
 
         SkinnedMeshRenderer newMash = Instantiate<SkinnedMeshRenderer>(newItem.mesh);
-        newMash.transform.parent = targetMesh.transform;
-
-        newMash.bones = targetMesh.bones;
-        newMash.rootBone = targetMesh.rootBone;
         currentMeshes[slotIndex] = newMash;
-         
+
+        if(newItem != null && newItem.equipmentSlot == EquipmentSlot.Weapon)
+        {
+            newMash.rootBone = sword;
+
+        }else if (newItem != null && newItem.equipmentSlot == EquipmentSlot.Shield)
+        {
+            newMash.rootBone = shield;
+
+        }
+        else
+        {
+            newMash.transform.parent = targetMesh.transform;
+            newMash.bones = targetMesh.bones;
+            newMash.rootBone = targetMesh.rootBone;
+        }
     }
 
     public Equipment Unequip(int slotIndex)

@@ -11,10 +11,12 @@ public class PlayerManager : MonoBehaviour
 	#region Singleton
 
 	public static PlayerManager instance;
+	private Enemy[] enemies;
 
 	void Awake()
 	{
 		instance = this;
+		enemies = GameObject.FindObjectsOfType<Enemy>();
 	}
 
 	#endregion
@@ -25,5 +27,14 @@ public class PlayerManager : MonoBehaviour
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
+	
 
+	private void Update() {
+		foreach(Enemy e in enemies){
+			if(e != null)
+				return;
+		}
+
+		Time.timeScale = 0;
+	}
 }
