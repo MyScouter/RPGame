@@ -21,6 +21,9 @@ public class EquipmentManager : MonoBehaviour
     public SkinnedMeshRenderer targetMesh;
     public Transform shield;
     public Transform sword;
+
+    public GameObject ShieldPlayer;
+    public GameObject SwordPlayer;
     public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
     public OnEquipmentChanged onEquipmentChanged;
     Inventory inventory;
@@ -55,11 +58,11 @@ public class EquipmentManager : MonoBehaviour
         if(newItem != null && newItem.equipmentSlot == EquipmentSlot.Weapon)
         {
             newMash.rootBone = sword;
-
+            SwordPlayer.SetActive(true);
         }else if (newItem != null && newItem.equipmentSlot == EquipmentSlot.Shield)
         {
             newMash.rootBone = shield;
-
+            ShieldPlayer.SetActive(true);
         }
         else
         {
