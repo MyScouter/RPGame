@@ -98,6 +98,7 @@
      <Compile Include="Assets\Scripts\Controller\PlayerMotor.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EquipmentManager.cs" />
+     <Compile Include="Assets\Scripts\HealthUI.cs" />
      <Compile Include="Assets\Scripts\Helper\ConvertToRegularMesh.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
