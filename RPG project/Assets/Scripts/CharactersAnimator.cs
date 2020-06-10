@@ -11,14 +11,15 @@ public class CharactersAnimator : MonoBehaviour
     NavMeshAgent agent;
     protected Animator animator;
     protected CharacterCombat combat;
-    protected AnimatorOverrideController overrideController;
+    public AnimatorOverrideController overrideController;
     protected virtual void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
         combat = GetComponent<CharacterCombat>();
 
-        overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        if (overrideController == null)
+            overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         animator.runtimeAnimatorController = overrideController;
 
         currentAttackAnimSet = deafultAttackAnimSet;
