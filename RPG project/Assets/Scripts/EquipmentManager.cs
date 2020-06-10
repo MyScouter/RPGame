@@ -97,6 +97,10 @@ public class EquipmentManager : MonoBehaviour
 
     public void UnequipAll()
     {
+        if(ShieldPlayer.activeSelf)
+            ShieldPlayer.SetActive(false);
+        if(SwordPlayer.activeSelf)
+            SwordPlayer.SetActive(false);
         for (int i = 0; i < currentEquipment.Length; i++)
         {
             Unequip(i);
