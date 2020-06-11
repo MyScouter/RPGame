@@ -17,4 +17,4 @@
 <p>There are a lot of other scripts, such as base scripts for describing an item <a href="RPG project/Assets/Scripts/Items/Item.cs">Item</a>, deriving scripts <a href="RPG project/Assets/Scripts/Items/Equipment.cs">Equipment</a>. different scripts for the inventory <a href="RPG project/Assets/Scripts/Inventory/Inventory.cs">Inventory</a>, <a href="RPG project/Assets/Scripts/Inventory/InventorySlot.cs">InventorySlot</a>,&nbsp;and more.</p>
 <p><img src="https://github.com/MyScouter/RPGame/blob/master/gif/invnt%26take.gif" alt="take" /></p>
 <p><img src="https://github.com/MyScouter/RPGame/blob/master/gif/equip%26unequip.gif" alt="equip" /></p>
-<p>Sources from:&nbsp;<a href="http://devassets.com/assets/rpg-tutorial-assets/">DevAssets</a></p>
+<p>Resources from:&nbsp;<a href="http://devassets.com/assets/rpg-tutorial-assets/">DevAssets</a></p>
