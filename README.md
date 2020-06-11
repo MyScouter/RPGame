@@ -18,3 +18,4 @@
 <p><img src="https://github.com/MyScouter/RPGame/blob/master/gif/invnt%26take.gif" alt="take" /></p>
 <p><img src="https://github.com/MyScouter/RPGame/blob/master/gif/equip%26unequip.gif" alt="equip" /></p>
 <p>Resources from:&nbsp;<a href="http://devassets.com/assets/rpg-tutorial-assets/">DevAssets</a></p>
+<p>Check this playlist if you also want to learn how to make this game:&nbsp;<a href="https://www.youtube.com/watch?v=nu5nyrB9U_o&amp;list=PLPV2KyIb3jR4KLGCCAciWQ5qHudKtYeP7">Brackeys - RPG</a></p>
